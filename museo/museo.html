@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1e293b">
+    <title>Museo de la Ingeniería Industrial y Moderna</title>
+    <link rel="stylesheet" href="museo.css">
+    <script src="museo.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="background-pattern" aria-hidden="true"></div>
+    <div class="background-overlay" aria-hidden="true"></div>
+    <div class="spotlight" aria-hidden="true"></div>
+
+    <div class="scroll-progress" role="progressbar" aria-label="Progreso de navegación" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-fill"></div>
+    </div>
+
+    <main class="museum-container" id="museum" role="main">
+        <section class="hero" data-index="-1" aria-label="Portada del museo">
+            <div class="hero-content">
+           <div class="nav-buttons">
+                <a href="../pagina de inicio/index.html" class="nav-btn">Inicio</a>
+                <a href="../descubre/descubre.html" class="nav-btn">Descubre</a>
+            </div>   
+            <h1 class="hero-title">
+               Museo de la<br>
+                   <span class="highlight">Ingeniería</span>
+                </h1>
+                <p class="hero-subtitle-text">Industrial y Moderna</p>
+                <div class="hero-divider" aria-hidden="true"></div>
+                <p class="hero-text">
+                    Un recorrido fascinante por las máquinas y tecnologías que transformaron
+                    la historia de la humanidad. Desde los primeros transistores que
+                    revolucionaron la electrónica, hasta los paneles solares que hoy
+                    iluminan el camino hacia un futuro sostenible.
+                </p>
+  <p class="especial">Realizado por Brallan Gomez [ algunos elementos no son de autoría propia y se recomienda discresión]</p>
+    <div class="logos">
+    <img src="https://www.usco.edu.co/imagen-institucional/ocre/universidad-surcolombiana.png" alt="imagen_universidad Surcolombiana"
+    class="logo_usco">
+
+    <a href="https://www.instagram.com/uscooficial?igsh=MWhoMzFtejdkd2U1cw=="><img src="https://globalartsupplies.co.uk/wp-content/uploads/2020/04/instagram-logo.png" class="logo_instagram"  alt="instagram_logo"></a>
+    <a href="https://www.facebook.com/share/14dxczEPApX/"><img src="https://static.vecteezy.com/system/resources/previews/016/716/481/non_2x/facebook-icon-free-png.png" class="logo_facebook" alt="imagen_logofacebook"></a>
+    </div>
+            </div>
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="gear gear--large"></div>
+                <div class="gear gear--medium"></div>
+                <div class="gear gear--small"></div>
+            </div>
+            <div class="scroll-hint" aria-hidden="true">
+                <div class="scroll-hint__arrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-1" data-index="0" aria-label="Exhibit 01: Microchip">
+            <div class="model-container" aria-label="Modelo 3D de un microchip">
+                <model-viewer src="../microprocesador3d/microprocesador_z80.glb"
+                    auto-rotate camera-controls touch-action="pan-y"
+                    shadow-intensity="1" exposure="0.8" loading="lazy"
+                    alt="Modelo 3D interactivo de un microchip Z80">
+                </model-viewer>
+            </div>
+            <div class="content">
+                <span class="exhibit-number" aria-hidden="true">01</span>
+                <span class="exhibit-tag">Electrónica</span>
+                <h2>Microchip</h2>
+                <p class="description">El cerebro de la era digital moderna. Este pequeño chip de silicio contiene miles de millones de transistores miniaturizados, cada uno más pequeño que un cabello humano, trabajando en perfecta armonía para ejecutar miles de millones de operaciones por segundo. Los microchips son el corazón de cada dispositivo electrónico que usamos a diario, desde teléfonos inteligentes hasta computadoras y sistemas de navegación GPS.</p>
+                <div class="exhibit-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Año</span>
+                        <span class="meta-value">1971</span>
+                    </div>
+
+            </div>
+        </section>
+
+        <section class="slide" id="slide-2" data-index="1" aria-label="Exhibit 02: Transistor">
+            <div class="model-container" aria-label="Modelo 3D de un transistor">
+                <model-viewer src="../transistor3d/transistor.glb"
+                    auto-rotate camera-controls touch-action="pan-y"
+                    shadow-intensity="1" exposure="0.8" loading="lazy"
+                    alt="Modelo 3D interactivo de un transistor">
+                </model-viewer>
+            </div>
+            <div class="content">
+                <span class="exhibit-number" aria-hidden="true">02</span>
+                <span class="exhibit-tag">Semiconductor</span>
+                <h2>Transistor</h2>
+                <p class="description">El componente electrónico más importante de la historia moderna. Inventado en los laboratorios Bell en 1947 por Bardeen, Brattain y Shockley —quienes recibieron el Premio Nobel—, el transistor funciona como un interruptor electrónico capaz de amplificar y conmutar señales eléctricas, reemplazando los voluminosos tubos de vacío y dando inicio a la era de la electrónica compacta y accesible.</p>
+                <div class="exhibit-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Año</span>
+                        <span class="meta-value">1947</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-3" data-index="2" aria-label="Exhibit 03: Satélites Starlink">
+            <div class="model-container" aria-label="Modelo 3D de satélite Starlink">
+                <model-viewer src="../starlink3d/starlink_spacex_satellite.glb"
+                    auto-rotate camera-controls touch-action="pan-y"
+                    shadow-intensity="1" exposure="0.8" loading="lazy"
+                    alt="Modelo 3D interactivo de un satélite Starlink">
+                </model-viewer>
+            </div>
+            <div class="content">
+                <span class="exhibit-number" aria-hidden="true">03</span>
+                <span class="exhibit-tag">Aeroespacial</span>
+                <h2>Satélites Starlink</h2>
+                <p class="description">La mayor constelación de satélites jamás construida. Lanzada por SpaceX desde 2015 para proporcionar internet de alta velocidad a cada rincón del planeta. Con más de 6,000 satélites en órbita terrestre baja, Starlink conecta comunidades rurales, naves en alta mar y estaciones de investigación en los lugares más remotos del mundo, redefiniendo la conectividad global.</p>
+              
+            </div>
+        </section>
+
+        <section class="slide" id="slide-4" data-index="3" aria-label="Exhibit 04: Cohetes Espaciales">
+            <div class="model-container" aria-label="Modelo 3D del cohete Artemis SLS">
+                <model-viewer src="../cohete3d/artemis_ii_-_space_launch_system_sls.glb"
+                    auto-rotate camera-controls touch-action="pan-y"
+                    shadow-intensity="1" exposure="0.8" loading="lazy"
+                    alt="Modelo 3D interactivo del cohete SLS de la misión Artemis II">
+                </model-viewer>
+            </div>
+            <div class="content">
+                <span class="exhibit-number" aria-hidden="true">04</span>
+                <span class="exhibit-tag">Propulsión</span>
+                <h2>Cohetes Espaciales</h2>
+                <p class="description">Las máquinas más poderosas jamás creadas, capaces de desafiar la gravedad a velocidades superiores a los 28,000 km/h. Desde el Sputnik en 1957 hasta los cohetes reutilizables de SpaceX, estas maravillas de la ingeniería han expandido los límites de nuestra civilización hacia las estrellas y permitido la exploración del sistema solar.</p>
+               
+            </div>
+        </section>
+
+        <section class="slide" id="slide-5" data-index="4" aria-label="Exhibit 05: Locomotora">
+            <div class="model-container" aria-label="Modelo 3D de una locomotora">
+                <model-viewer src="../locomotora3d/mini_locomotora_vallparadis.glb"
+                    auto-rotate camera-controls touch-action="pan-y"
+                    shadow-intensity="1" exposure="0.8" loading="lazy"
+                    alt="Modelo 3D interactivo de una locomotora de vapor">
+                </model-viewer>
+            </div>
+            <div class="content">
+                <span class="exhibit-number" aria-hidden="true">05</span>
+                <span class="exhibit-tag">Revolución Industrial</span>
+                <h2>Locomotora</h2>
+                <p class="description">La máquina que impulsó la Revolución Industrial y transformó para siempre el transporte terrestre. Inventada por Richard Trevithick en 1804, la primera locomotora de vapor demostró que el transporte podía mecanizarse y escalarse. Conectó ciudades antes separadas por semanas de viaje, reduciendo esos tiempos a horas y transformando la logística del comercio mundial.</p>
+                <div class="exhibit-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Año</span>
+                        <span class="meta-value">1804</span>
+      
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-6" data-index="5" aria-label="Exhibit 06: Planta Nuclear">
+            <div class="model-container" aria-label="Modelo 3D de una planta nuclear">
+                <model-viewer src="../plantanuclear3d/thermal_power_plant__cooling_tower.glb"
+                    auto-rotate camera-controls touch-action="pan-y"
+                    shadow-intensity="1" exposure="0.8" loading="lazy"
+                    alt="Modelo 3D interactivo de una torre de enfriamiento de planta nuclear">
+                </model-viewer>
+            </div>
+            <div class="content">
+                <span class="exhibit-number" aria-hidden="true">06</span>
+                <span class="exhibit-tag">Energía</span>
+                <h2>Planta Nuclear</h2>
+                <p class="description">La forma más eficiente de generación de energía a escala masiva. Las plantas nucleares utilizan la fisión del uranio para generar calor, producir vapor y accionar turbinas eléctricas. Una sola planta puede generar más de 10,000 MW —suficiente para millones de hogares—, con una eficiencia operativa superior al 90%, siendo la fuente de energía de baja emisión de carbono más densa del mundo.</p>
+ 
+            </div>
+        </section>
+
+        <section class="slide" id="slide-7" data-index="6" aria-label="Exhibit 07: Paneles Solares">
+            <div class="model-container" aria-label="Modelo 3D de un panel solar">
+                <model-viewer src="../panelsolar3d/solar_panel.glb"
+                    auto-rotate camera-controls touch-action="pan-y"
+                    shadow-intensity="1" exposure="0.8" loading="lazy"
+                    alt="Modelo 3D interactivo de un panel solar fotovoltaico">
+                </model-viewer>
+            </div>
+            <div class="content">
+                <span class="exhibit-number" aria-hidden="true">07</span>
+                <span class="exhibit-tag">Renovable</span>
+                <h2>Paneles Solares</h2>
+                <p class="description">La tecnología que convierte la energía más abundante del universo en electricidad limpia e ilimitada. Las células fotovoltaicas de silicio monocristalino transforman la luz solar mediante el efecto fotovoltaico. Los paneles modernos alcanzan eficiencias superiores al 25%, representando el futuro de la energía renovable y el camino hacia una civilización verdaderamente sostenible.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="navigation" aria-label="Navegación del museo">
+        <div class="nav-dots" role="list">
+            <button class="nav-dot active" data-slide="0" role="listitem" aria-label="Ir a Inicio" aria-current="true"><span class="dot-label">Inicio</span></button>
+            <button class="nav-dot" data-slide="1" role="listitem" aria-label="Ir a Microchip"><span class="dot-label">Microchip</span></button>
+            <button class="nav-dot" data-slide="2" role="listitem" aria-label="Ir a Transistor"><span class="dot-label">Transistor</span></button>
+            <button class="nav-dot" data-slide="3" role="listitem" aria-label="Ir a Starlink"><span class="dot-label">Starlink</span></button>
+            <button class="nav-dot" data-slide="4" role="listitem" aria-label="Ir a Cohetes"><span class="dot-label">Cohetes</span></button>
+            <button class="nav-dot" data-slide="5" role="listitem" aria-label="Ir a Locomotora"><span class="dot-label">Locomotora</span></button>
+            <button class="nav-dot" data-slide="6" role="listitem" aria-label="Ir a Planta Nuclear"><span class="dot-label">Nuclear</span></button>
+            <button class="nav-dot" data-slide="7" role="listitem" aria-label="Ir a Paneles Solares"><span class="dot-label">Solares</span></button>
+        </div>
+    </nav>
+
+
+</body>
+</html>
